@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="img/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <p>I'm Sofware Engineer</p>
+            <h1>Zharkunai Itibaeva</h1>
+            <a href="" class="bth">Contact me</a>
+        </div>
+    </section>
+
+    <!-- Skill-->
+
+    <section class="skill">
+        <h1> My Skill </h1>
+        <p>programming languages that i know</p>
+        <div class="row">
+            <div class="skill-col">
+                <img src="img/html.png">
+                <div class="layer">
+                    <h3>HTML/CSS</h3>
+                </div>
+            </div>
+            <div class="skill-col">
+                <img src="img/python.png">
+                <div class="layer">
+                    <h3>PYTHON</h3>
+                </div>
+            </div>
+            <div class="skill-col">
+                <img src="img/java.png">
+                <div class="layer">
+                    <h3>JAVA</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photos -->
+
+    <section class="photos">
+        <h1>My photos</h1>
+        <p>Here are some of my photos:</p>
+        <div class="row">
+            <div class="card card1">
+                <h5>Anger</h5>
+            </div>
+            <div class="card card2">
+                <h5>Anxiety</h5>
+            </div>
+            <div class="card card3">
+                <h5>Ennui</h5>
+            </div>
+            <div class="card card4">
+                <h5>Joy</h5>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+
+    <section class="cta">
+        <h1>Admission</h1>
+        <a href="" class="bth">CONTACT ME</a>
+    </section>
+
+    <!-- Footer -->
+
+    <section class="footer">
+        <h4>About me</h4>
+        <p>I'm Zharkynai, a software engineer studying at Ala-Too University. In my free time, I love to draw, especially sunsets and the moon. I also enjoy skateboarding and watching TV series.</p>
+        <div class="icons">
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-whatsapp"></i>
+        </div>
+        <p>Zharkynai<i class="fa fa-heart-o"></i></p>
+    </section>
+
+    <!-- Script -->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
